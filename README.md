@@ -24,6 +24,7 @@ To manage their own backend, the researchers are supposed to create their own Fi
 at line 8,i.e.,
 
 ```cred = credentials.Certificate("./flutternotification-ebd50-firebase-adminsdk-dum2k-315e67534e.json")```
+
 to change the name of the private key file to the name of the actual file the users have (We are developing a way to make this process smoother right now).
 
 
