@@ -13,9 +13,11 @@ The frontend is written in flutter and can be found at [reinlife_flutter](https:
 
 To manage their own backend, the researchers are supposed to create their own Firebase project. We are continuing working on this part to create a pipeline that allows researchers to smoothly create new Firebase projects based on their requirements. The document for this part is coming soon.
 
+
+
 ## Running python code
 1. Recreate python/anaconda environment using environment.yml
-2. Researchers can look at `example_researcher_defined_code.ipynb` which is a jupyter notebook that contains the example code of of the API should be used. The APIs are in the module `ReinLifeResearcher.py`
+2. Researchers can look at `example_researcher_defined_code.ipynb` which is a jupyter notebook that contains the example code of of the API should be used. The APIs are in the module `ReinLifeResearcher.py`. If the researchers want to create a new Firebase project, the researchers need to download the private key for new Firebase AdminSDK (refer to this Firebase [document](https://firebase.google.com/docs/admin/setup) if you are not familiar with the private key ), and edit the code in `server2firestore.py` at line 8 `cred = credentials.Certificate("./flutternotification-ebd50-firebase-adminsdk-dum2k-315e67534e.json"), to change the name of the private key file to the name of the actual file the users have (We are developing a way to make this process smoother right now).
 
 
 
